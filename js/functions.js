@@ -4,7 +4,7 @@ function EasyPeasyParallax() {
 	$('#section-1').css({
 		'background-position' : '50% ' + (-scrollPos/4)+"px"
 	});
-	$('#title-1').css({		
+	$('#title-1').css({
 		'opacity': 1-(scrollPos/450)
 	});
 }
@@ -113,18 +113,14 @@ wow.init();
         .find('.item')
         .append('<h2 class="target">Callback: Start</h2>');
 
-      console.log('event -> inStart');
     })
     .one('animsition.inEnd',function(){
       $('.target', this).html('Callback: End');
-      console.log('event -> inEnd');
     })
     .one('animsition.outStart',function(){
-      console.log('event -> outStart');
     })
     .one('animsition.outEnd',function(){
       $('.target', this).html('Callback: End');
-      console.log('event -> outEnd');
     });
 
   });
